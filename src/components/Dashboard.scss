@@ -1,0 +1,91 @@
+$colorCharcoal: #264653;
+$colorPersianGreen: #2a9d8f;
+$colorOrangeYellowCrayola: #e9c46a;
+$colorSandyBrown: #f4a261;
+$colorBurntSienna: #e76f51;
+
+.dashboard {
+  font-size: 20px;
+  padding: 20px;
+
+  &__user-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  &__greeting {
+    h1 {
+      margin-bottom: 6px;
+    }
+    padding-left: 30px;
+    color: $colorCharcoal;
+  }
+
+  &__img {
+  }
+
+  &__user-label {
+    color: $colorPersianGreen;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  &__user-text {
+    color: $colorCharcoal;
+  }
+
+  &__btn-logout {
+    background: $colorBurntSienna;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.5s;
+
+    &:hover {
+      background: $colorSandyBrown;
+    }
+  }
+}
+
+.navActionsContainer {
+  ul {
+    width: 100%;
+    padding: 1px;
+    list-style-type: none;
+    display: flex;
+    background: #2a9d8f;
+    margin-bottom: 10px;
+
+    li {
+      float: left;
+      border-right: 2px solid #264653;
+
+      a {
+        display: block;
+        color: #264653;
+        font-weight: bold;
+        background: #2a9d8f;
+        text-align: center;
+        padding: 8px 10px;
+        text-decoration: none;
+        transition: all 0.4s;
+
+        &:hover {
+          color: #2a9d8f;
+          background: #264653;
+        }
+      }
+    }
+  }
+}

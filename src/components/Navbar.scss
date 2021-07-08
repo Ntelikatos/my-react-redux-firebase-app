@@ -1,0 +1,57 @@
+$colorCharcoal: #264653;
+$colorPersianGreen: #2a9d8f;
+$colorOrangeYellowCrayola: #e9c46a;
+$colorSandyBrown: #f4a261;
+$colorBurntSienna: #e76f51;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $colorBurntSienna;
+  padding: 0 20px;
+
+  &__logo {
+    h1 {
+      color: $colorOrangeYellowCrayola;
+    }
+  }
+
+  &__menu {
+    width: 100%;
+    padding: 1px;
+    list-style-type: none;
+    display: flex;
+  }
+
+  &__item {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 5px 17px;
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    padding: 10px 0;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      background: $colorOrangeYellowCrayola;
+      height: 2px;
+      transition: width 0.4s;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}

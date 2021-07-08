@@ -1,0 +1,13 @@
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileDetailsContainer {
+  .profileDetails {
+    width: 600px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
