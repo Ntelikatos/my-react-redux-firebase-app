@@ -1,14 +1,9 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 import { compose } from 'redux'
-import { useHistory } from 'react-router-dom'
+// import { useHistory } from 'react-router-dom'
 import { connect, useSelector } from 'react-redux'
-import {
-  withFirestore,
-  isLoaded,
-  isEmpty,
-  useFirebase,
-} from 'react-redux-firebase'
+import { withFirestore, isLoaded, isEmpty } from 'react-redux-firebase'
 import TodoItem from './TodoItem'
 
 const Todos = ({ firestore, data }) => {

@@ -5,7 +5,6 @@ import Home from './Home'
 import Dashboard from './Dashboard'
 import { PrivateRoute } from '../redux/store'
 import './Navbar.scss'
-import logo from '../resources/modi.svg'
 
 const Navbar = () => {
   return (

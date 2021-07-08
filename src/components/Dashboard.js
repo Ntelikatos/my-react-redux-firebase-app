@@ -51,7 +51,7 @@ const Dashboard = () => {
             Log Out
           </button>
         </div>
-        {/* <div className='navActionsContainer'>
+        <div className='navActionsContainer'>
           <h1>Actions</h1>
           <ul>
             <li>
@@ -77,7 +77,7 @@ const Dashboard = () => {
               <UpdateProfile />
             </Route>
           </Switch>
-        </div> */}
+        </div>
       </div>
     </>
   )
